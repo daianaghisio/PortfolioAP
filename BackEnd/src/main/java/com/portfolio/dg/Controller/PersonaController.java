@@ -52,7 +52,7 @@ public class PersonaController {
 	
 	@GetMapping("/personas/traer/perfil")
 	public Persona findPersona() {
-		return personaService.findPersona((long)1);
+		return personaService.findPersona((long)1);  //Para que funcione el id en la bbdd tiene que ser 1
 	}
 	
 }
