@@ -21,6 +21,7 @@ import com.portfolio.dg.Interface.PersonaService;
 public class PersonaController {
 	@Autowired PersonaService personaService;
 	
+	
 	@GetMapping("personas/traer")
 	public List<Persona> getPersona(){
 		return personaService.getPersona();
