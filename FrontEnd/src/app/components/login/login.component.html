@@ -1,0 +1,32 @@
+<h1 class="m-5">Iniciar Sesión</h1>
+<form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email </label>
+      <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="text-danger">
+            El email es requerido.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="text-danger">
+            El formato del email debe ser valido.
+        </p>
+    </div>
+    
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text-danger">
+            La contraseña es requerida.
+        </p>
+    </div>
+    
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+  </form>
