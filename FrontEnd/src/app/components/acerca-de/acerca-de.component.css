@@ -5,8 +5,11 @@
 }
 
 div{
-    background-color: #a1b5cb;
+    background-color: #616b8d;
     text-align: center;
+    color: #f7f5ff;
+    padding: 10px;
+    
 }
 
 #nombre{
@@ -36,6 +39,6 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
-        top: 310px;
+        top: 750px;
     }
 }
